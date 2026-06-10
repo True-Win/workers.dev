@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /play-truewin/
+
+Sitemap: https://true-winae.com/sitemap.xml
