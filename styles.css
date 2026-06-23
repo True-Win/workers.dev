@@ -98,3 +98,29 @@
   .site-header .header-actions .lang-switch a{padding:5px 7px;font-size:.74rem;}
   .site-header .nav-toggle{width:36px;flex-basis:36px;}
 }
+
+/* ===== Exclusive deposit-bonus blocks (Bonus 1/2/3) ===== */
+.excl-banner{margin:0 auto 18px;max-width:980px;text-align:center;background:linear-gradient(180deg,rgba(245,177,21,0.12),rgba(47,123,240,0.08));border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 20px}
+.excl-banner p{color:var(--muted)}
+.bonus-stack{display:grid;gap:34px;max-width:1040px;margin:0 auto}
+.bonus-pack{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.bonus-pack__media{position:relative;aspect-ratio:1536/1024;background:var(--bg-2)}
+.bonus-pack__media img{width:100%;height:100%;object-fit:cover}
+.bonus-pack__body{padding:26px 24px 28px}
+.bonus-pack__title{font-size:1.5rem;font-weight:800;letter-spacing:-0.01em}
+.bonus-pack__intro{color:var(--muted);margin-top:8px}
+.bonus-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.bonus-tier{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-sm);padding:18px 16px}
+.bonus-tier__ico{font-size:1.5rem;display:block;margin-bottom:8px}
+.bonus-tier__pct{font-size:1.7rem;font-weight:800;line-height:1;background:linear-gradient(100deg,var(--gold-bright),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.bonus-tier__name{font-size:0.86rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--text);margin-top:4px}
+.bonus-tier__cap{font-size:0.82rem;color:var(--muted);margin-top:6px}
+.bonus-tier ul{margin-top:10px;display:grid;gap:6px}
+.bonus-tier li{position:relative;padding-left:16px;font-size:0.82rem;color:var(--muted);line-height:1.45}
+.bonus-tier li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:50%;background:var(--blue-bright)}
+[dir="rtl"] .bonus-tier li{padding-left:0;padding-right:16px}
+[dir="rtl"] .bonus-tier li::before{left:auto;right:2px}
+.bonus-pack__note{margin-top:20px;font-size:0.84rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.bonus-pack__cta{margin-top:18px;display:flex;justify-content:center}
+.bonus-pack__cta .btn{min-width:200px}
+@media (max-width:760px){.bonus-tiers{grid-template-columns:1fr}}
